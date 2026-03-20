@@ -15,6 +15,28 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "BG Innova | Soluciones Tecnológicas y Transformación Digital",
   description: "Desarrollo de software a medida, consultoría IT y servicios tecnológicos avanzados para Startups y PYMES. Elevando la innovación más allá de los límites.",
+  openGraph: {
+    title: "BG Innova | Soluciones Tecnológicas y Transformación Digital",
+    description: "Desarrollo de software a medida, consultoría IT y servicios tecnológicos avanzados para Startups y PYMES. Elevando la innovación más allá de los límites.",
+    url: "https://www.bginnova.com/",
+    siteName: "BG iNNOVA",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "BG Innova - Ingeniería sin Fronteras",
+      },
+    ],
+    locale: "es_PE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BG Innova | Soluciones Tecnológicas",
+    description: "Desarrollo de software a medida y consultoría IT.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

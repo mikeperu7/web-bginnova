@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-outfit);
+
+  --color-space-black: #020617;
+  --color-brand-teal: #2dd4bf;
+  --color-brand-sky: #38bdf8;
+  --color-nebula-blue: rgba(56, 189, 248, 0.1);
+  
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #ffffff;
+  --foreground: #020617;
+}
+
+.dark {
+  --background: #020617;
+  --foreground: #f8fafc;
+  --color-brand-blue: #0b1e3b;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply antialiased selection:bg-brand-teal/30 selection:text-brand-teal;
+}
+
+/* Custom Galactic Utilities - Enterprise Refined */
+.glass-card {
+  @apply bg-slate-900/30 backdrop-blur-xl border border-white/5 shadow-xl hover:border-white/10 transition-colors;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-teal via-white/90 to-brand-sky;
+}
+
+.glow-teal {
+  box-shadow: 0 0 30px rgba(45, 212, 191, 0.15);
+}
+
+.nebula-bg {
+  background: radial-gradient(circle at 50% -20%, rgba(45, 212, 191, 0.08), transparent 70%),
+              radial-gradient(circle at 100% 100%, rgba(56, 189, 248, 0.05), transparent 50%);
 }

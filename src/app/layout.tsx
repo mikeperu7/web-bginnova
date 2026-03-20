@@ -15,6 +15,11 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "BG Innova | Soluciones Tecnológicas y Transformación Digital",
   description: "Desarrollo de software a medida, consultoría IT y servicios tecnológicos avanzados para Startups y PYMES. Elevando la innovación más allá de los límites.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   openGraph: {
     title: "BG Innova | Soluciones Tecnológicas y Transformación Digital",
     description: "Desarrollo de software a medida, consultoría IT y servicios tecnológicos avanzados para Startups y PYMES. Elevando la innovación más allá de los límites.",
